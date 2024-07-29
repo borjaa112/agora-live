@@ -78,7 +78,7 @@ const App = () => {
       // Call the joinChannel method to join the channel
       agoraEngineRef.current?.joinChannel(token, channelName, uid, {
         // Set the user role to broadcaster
-        clientRoleType: ClientRoleType.ClientRoleAudience,
+        clientRoleType: ClientRoleType.ClientRoleBroadcaster,
       });
     } catch (e) {
       console.log(e);
