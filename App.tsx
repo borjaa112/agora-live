@@ -151,6 +151,7 @@ const styles = StyleSheet.create({
   head: {fontSize: 20},
 });
 
+// Esto sobrará porque el espectador no debe hablar
 const getPermission = async () => {
   if (Platform.OS === 'android') {
     await PermissionsAndroid.requestMultiple([
